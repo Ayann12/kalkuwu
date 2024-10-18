@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.calculator {
+    background: linear-gradient(145deg, #333, #111);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    border: 2px solid #c0a364;
+    text-align: center;
+}
+
+.brand {
+    font-size: 0.5; /* Ukuran font besar untuk merk */
+    color: #c0a364; /* Warna emas untuk merk */
+    font-weight: bold;
+    margin-bottom: 20px; /* Jarak antara merk dan display */
+    letter-spacing: 2px; /* Menambah jarak antar huruf untuk kesan mewah */
+    text-transform: uppercase; /* Agar teks tampil dengan huruf kapital */
+}
+
+#display {
+    width: 100%;
+    height: 80px;
+    background-color: #222;
+    color: #c0a364;
+    font-size: 1.5rem;
+    border: 2px solid #c0a364;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    padding: 22px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #555, #333);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button.zero {
+    grid-column: span 2;
+}
+
+button:active {
+    background-color: #222;
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #777;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+button.special {
+    background: #c0a364;
+    color: #222;
+}
+
+button.special:hover {
+    background: #d4b97d;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+button.special:active {
+    background: #b3944e;
+}
+
+button.digit {
+    background: #444;
+    color: #fff;
+}
+
+button.digit:hover {
+    background: #555;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+button.digit:active {
+    background: #333;
+}
