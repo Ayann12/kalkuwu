@@ -19,7 +19,7 @@ function deleteLast() {
 // Menghitung hasil
 function calculateResult() {
     try {
-        display.value = 'Aku kangen wkwk'
+        display.value = 'Solvi andesa 💖'
         // display.value = eval(display.value);
     } catch (error) {
         display.value = 'Error';
